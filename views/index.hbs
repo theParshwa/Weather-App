@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather </title>
+</head>
+    <link rel="icon" href="/img/weathericon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+<body>
+    <div class="main-content"> 
+        {{>header}}
+        <p id="find-text"> Find what the weather is anywhere with just a click of a button! </p>
+    
+    <form>
+        <input placeholder="Location">
+        <button> Search </button>
+    </form>
+    
+    <p id="message-1"> 
+
+    </p>
+
+    <p id="message-2">  
+
+    </p>
+    </div>
+    {{>footer}}
+
+      <script src="/js/app.js"></script>
+</body>
+</html>
