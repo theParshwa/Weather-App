@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         }
         else {
             callback(undefined, 'Weather is ' + body.current.weather_descriptions[0] + '.'
-            + ' ' + 'Currently ' + body.current.temperature + ' degrees. Feels like ' + body.current.feelslike + ' degrees.')
+            + ' ' + 'Currently ' + body.current.temperature + ' degrees. Feels like ' + body.current.feelslike + ' degrees. The UV index is ' + body.current.uv_index + '. The humidity is ' +body.current.humidity)
         }
     })
 }
